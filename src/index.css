@@ -9,22 +9,38 @@ body {
 }
 
 .app {
-  background-image: url(./assets/cloudysky.jpg);
+  background-image: url(./images/sunny.jpg);
   background-size: cover;
   background-position: bottom;
   transition: all 0.4s ease;
 }
 
-.app .warm {
-  background-image: url(./assets/sunnysky.jpg);
+.Clouds {
+  background-image: url(./images/cloudy.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.4s ease;
 }
 
-.app .rain {
-  background-image: url(./assets/rainsky.jpg);
+.Rain {
+  background-image: url(./images/rain.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.4s ease;
 }
 
-.app .snow {
-  background-image: url(./assets/snowsky.jpg);
+.Snow {
+  background-image: url(./images/snow.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.4s ease;
+}
+
+.Storm {
+  background-image: url(./images/storm.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.4s ease;
 }
 
 main {

@@ -9,6 +9,7 @@ const api = {
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
+  const [weatherType, setWeatherType] = useState("");
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -16,7 +17,11 @@ function App() {
         .then(res => res.json())
         .then(result => {
           setWeather(result);
+          setWeatherType(result.weather[0].main);
           setQuery("");
+        })
+        .catch(err => {
+          "undefined" ? setQuery("") : setQuery("");
         });
     }
   };
@@ -53,16 +58,11 @@ function App() {
 
     return `${day} ${date} ${month} ${year}`;
   };
+
+  console.log(weatherType);
+
   return (
-    <div
-      className={
-        typeof weather.main != "undefined"
-          ? weather.main.temp > 60
-            ? "app warm"
-            : "app"
-          : "app"
-      }
-    >
+    <div className={`app ${weatherType}`}>
       <main>
         <div className="search-box">
           <input

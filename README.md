@@ -1,3 +1,10 @@
+# How's the Weather?
+
+This web app allows you to type in a city, state and it returns the current weather from the openweathermap.org API. The background changes depending on the weather. Created with react.js
+
+![How's the Weather?](./src/images/weatherapp.jpg)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
